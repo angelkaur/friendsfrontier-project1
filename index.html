@@ -17,7 +17,7 @@
 	<small class="profile-user-handle">@angel</small>
 	<div class="profile-actions">
 		<button class="btn btn--primary">Follow</button>
-		<button class="btn btn--icon" id="shareBtn">
+		<button class="btn btn--icon" id="shareBtn" onclick="shareURL()">
   <i class="ph-export"></i> 
 </button>
 		<button class="btn btn--icon">
@@ -38,9 +38,9 @@
 </article>
 <!-- partial -->
   <script src='https://unpkg.com/phosphor-icons'></script><script  src="./script.js"></script>
-<script>
+
  <script>
-  function shareURL() {
+ function shareURL() {
     if (navigator.share) {
       navigator.share({
         title: 'Check out this link!',
@@ -53,7 +53,7 @@
     }
   }
 </script>
-</script>
+
 	  <style>
     .btn {
       padding: 10px 20px;
